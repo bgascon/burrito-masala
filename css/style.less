@@ -1,0 +1,174 @@
+/*
+File Name: style.less
+Date: 07/27/2016
+Programmer: Betsy Gascon
+*/
+
+@import 'palette.less';
+@import 'mixins.less';
+@import '../fonts/nexarustslab/stylesheet.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6em;
+    text-align: center;
+    
+}
+
+h1 {
+    .headerFontStyle(@black; 3.2em);
+    line-height: 1.15em;
+}
+
+h2 {
+    .headerFontStyle(@black; 2em);
+    padding-top: 1.3em;
+    padding-bottom: .5em;
+}
+
+h3 {
+    .headerFontStyle(@black; 1.8em);
+    padding-top: 1.3em;
+    padding-bottom: .5em;
+}
+
+header {
+    background-color: @color1;
+    padding: 0 1em 2em 1em;
+    /* header img controls burrito masala logo*/
+    img {
+        display: block;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}
+
+main {
+    img {
+        padding-top: .5em;
+    }
+    h1, h2, h3, p, ul {
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+    /* iframe controls the google maps element */
+    iframe {
+        width: 95%;
+        border: 0;
+    }
+}
+
+/* This controls the width and display of the menu item elements */
+figure {
+    img {
+        max-width: 50%;
+    }
+    display: inline-block;
+}
+
+#social {
+    /* #social ul set to display horizontally across page and centered in the middle */
+    ul {
+        text-align: center;
+        padding-bottom: 2em;
+        li {
+            display: inline;
+            padding-left: .6em;
+        }
+    }
+    /* social img controls the size and display of social media links */
+    img {
+        width: 20%;
+        padding-top: 0;
+    }
+}
+#location {
+    padding-bottom: 2em;
+}
+#menu {
+    background-color: @color2;
+    font-size: .8em;
+    text-transform: uppercase;
+    padding-bottom: 2em;
+    margin-bottom: -1em;
+}
+
+footer {
+    background-color: @color1;
+    padding: 2em 2em 0 2em;
+    font-size: .7em;
+    /* first of type bolds 'hours' and 'location' text */
+    li:first-of-type {
+        font-weight: bold;
+    }
+}
+
+#copyright {
+    padding-top: 2em;
+}
+
+
+
+// TABLET STYLESHEET
+
+@media only screen and (min-width: 481px){
+    header {
+        padding: 4em 0 3em 0;
+        /* logo image will display inline starting at tablet resolution and higher */
+        img {
+            max-width: 30%;
+            float: left;
+            margin-top: -2.5em;
+        }
+    }
+    h1 {
+        font-size: 5em;
+    }
+    h2 {
+        font-size: 2.8em;
+    }
+    h3 {
+        font-size: 2em;
+    }
+    figure {
+        /* menu items will be larger for tablet resolution */
+        img {
+            max-width: 75%;
+        }
+    }
+    #social {
+        /* social media links will display smaller for tablet and desktop resolutions */
+        img {
+            max-width: 8%;
+        }
+    }
+}
+
+// DESKTOP STYLESHEET
+
+@media only screen and (min-width: 1025px) {
+    header {
+        padding: 6em 0 6em 0;
+        img {
+            max-width: 20%;
+            margin-top: -4.5em;
+        }
+    }
+    figure {
+        img {
+            max-width: 100%;
+            padding: 1em 2em 0 2em;
+        }
+    }
+    #social {
+        img {
+            max-width: 4%;
+        }
+    }
+    
+}

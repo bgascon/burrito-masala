@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<!--
+File Name: index.html
+Date: 08/13/16
+Programmer: Betsy Gascon
+-->
+
+<html lang="en">
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="author" content="Betsy Gascon">
+        <title>Burrito Masala</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/generic.css" rel="stylesheet" type="text/css">
+        <link href="css/grid.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        <header>
+            <img src="images/burrito-masala-logo.png" alt="burrito masala logo">
+            <h1>Burrito Masala</h1>
+        </header>
+        
+        <main>
+            <!-- Reponsive Grid takes effect at 768PX or higher --> 
+            <!-- Will display the divs horizonatally across the page as columns, each div will take up 4/12 of the screen -->
+            <section id="location" class="section group">
+                <div class="col span_4_of_12">
+                <h3>Hours</h3>
+                <ul>
+                    <li>Open 7 Days a Week</li>
+                    <li>11 AM to 7 PM</li>
+                </ul>
+                </div>
+                <div class="col span_4_of_12">
+                <h3>Location</h3>
+                <ul>
+                    <!-- Embedded Google Map, code taken from google maps 'embed' option -->
+                    <li>At the Corner of SW 3rd and Alder, Portland OR</li>
+                    <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.5606105984007!2d-122.67735768478427!3d45.51892303781189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950a05e9f31c37%3A0x147e3ce29232d353!2sSW+Alder+St+%26+SW+3rd+Ave%2C+Portland%2C+OR+97204!5e0!3m2!1sen!2sus!4v1470115539731"  allowfullscreen></iframe></li>
+                    
+                </ul>
+                </div>
+                <div class="col span_4_of_12">
+                <h3>Place An Order</h3>
+                <ul>
+                    <li>Order ahead over phone or text</li>
+                    <li>(503) 555-5555</li>
+                </ul> 
+                </div>
+            </section>
+            <!-- End Responsive Grid -->
+            
+            <section id="menu">
+                <!-- Menu items are sorted by section tags. Each section contains similar food types, ie...meats, veggies, rices, etc. -->
+                
+                <!-- When deleting or adding to the menu it is recommended that each section have no more than 4 figures so it will display correctly -->
+                <h2>Menu</h2>
+                <h3>Choose Burrito or Bowl</h3>
+                <section>
+                    <!-- Section for Burrito or Rice Bowl -->
+                    <figure>
+                    <img src="images/burrito.png" alt="Burrito">
+                        <figcaption>Burrito</figcaption>
+                    </figure>
+                    <figure>
+                    <img src="images/rice_bowl.png" alt="Rice Bowl">
+                        <figcaption>Rice Bowl</figcaption>
+                    </figure>
+                </section>
+                <h3>Pick One Meat or Veggie Option</h3>
+                <section>
+                    <!-- Section contains Meat Options -->
+                    <figure>
+                    <img src="images/chicken.png" alt="Chicken Tikka Masala">
+                        <figcaption>Chicken Tikka Masala</figcaption>
+                    </figure>
+                    <figure>
+                    <img src="images/lamp.png" alt="Lamb Curry">
+                        <figcaption>Lamb Curry</figcaption>
+                    </figure>
+                    <figure>
+                    <img src="images/pork.png" alt="Pork in salsa verde">
+                        <figcaption>Pork in Salsa Verde</figcaption>
+                    </figure>
+                </section>
+                <section>
+                    <!-- Section contains Veggie Options -->
+                    <figure>
+                    <img src="images/sambar.png" alt="Sambar">
+                        <figcaption>Sambar</figcaption>
+                    </figure>
+                    <figure>
+                    <img src="images/aloo-gobi-masala.png" alt="Aloo gobi masala">
+                        <figcaption>Aloo Gobi Masala</figcaption>
+                    </figure>
+                    <figure>
+                    <img src="images/chile.png" alt="Chile Relleno">
+                        <figcaption>Chile Relleno</figcaption>
+                    </figure>
+                </section>
+                <h3>Choose your rice</h3>
+                <section>
+                    <!-- Section contains Rice Options -->
+                    <figure>
+                    <img src="images/kerala_biryani.png" alt="Kerala Biryani">
+                        <figcaption>Kerala Biryani</figcaption>
+                    </figure>
+                    <figure>
+                    <img src="images/spanish_rice.png" alt="Spanish Rice">
+                        <figcaption>Spanish Rice</figcaption>
+                    </figure>
+                    <figure>
+                    <img src="images/brown_rice.png" alt="Brown Rice">
+                        <figcaption>Brown Rice</figcaption>
+                    </figure>
+                </section>
+                <h3>Add Toppings</h3>
+                <ul>
+                    <li>Mango Chutney</li>
+                    <li>Tomatillo Salsa</li>
+                    <li>Raita</li>
+                    <li>Grandma Nena's Fiery Red Salsa</li>
+                    <li>Cheese</li>
+                    <li>Sour Cream</li>
+                    <li>Onions</li>
+                    <li>Tomatoes</li>
+                    <li>Cucumbers</li>
+                    <li>Cilantro</li>
+                    <li>Guacamole</li>
+                </ul>
+            </section>
+            <!-- For full width, high color images .jpg format is preferred. This image is 1920X1276 so that it looks great on all screens, including retina displays. Images sizes 1080PX wide or higher are recommended -->
+            <img src="images/quasadilla.jpeg" alt="Burrito Masala Quesadilla">
+            
+            <section id="social">
+                <h2>Follow Us</h2>
+                <ul>
+                    <!-- the following social media tags currently have null links, they'll need to be updated to the Burrito Masala social media pages -->
+                    
+                    <!-- Any additional social media links should be in .png format to allow for transparency surrounding the logo and 128X128PX in dimension to display the same size as the others -->
+                    <li><a href="#"><img src="images/facebook.png" alt="Like us on Facebook"></a></li>
+                    <li><a href="#"><img src="images/tumblr.png" alt="Follow us on Tumblr"></a></li>
+                    <li><a href="#"><img src="images/pinterest.png" alt="Find us on Pinterest"></a></li>
+                    <li><a href="#"><img src="images/yelp.png" alt=" Find us on Yelp"></a></li>
+                </ul>
+                
+            </section>
+        </main>    
+        
+        <footer>
+            <ul>
+                <li>Hours:</li>
+                <li>Open 7 Days a Week </li>
+                <li>11AM to 7PM</li>
+            </ul>
+            
+            <ul>
+                <li>Location:</li>
+                <li>At the Corner of SW 3rd and Alder, Portland OR</li>
+            </ul>
+            
+            <p id="copyright">&copy; Copyright 2016: Burrito Masala</p>
+        </footer>
+    </body>
+
+</html>
